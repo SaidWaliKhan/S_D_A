@@ -18,4 +18,5 @@ Imagine a restaurant:
 - The **cashier** is responsible for handling payments.
 
 If one person tries to do both jobs, it can lead to confusion and inefficiency. Similarly, in programming, a class should focus on one specific task. If a class tries to do too much, it becomes harder to manage and modify.
-
+## Lecture
+https://github.com/user-attachments/assets/0f83c451-f200-4cff-baad-d67925f1a013
