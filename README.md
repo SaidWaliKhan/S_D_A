@@ -19,31 +19,3 @@ Imagine a restaurant:
 
 If one person tries to do both jobs, it can lead to confusion and inefficiency. Similarly, in programming, a class should focus on one specific task. If a class tries to do too much, it becomes harder to manage and modify.
 
----
-
-## Example Without SRP (Violating SRP)
-
-In this example, the `Employee` class is responsible for both managing employee data **and** printing it, which violates SRP.
-
-```java
-public class Employee {
-    private String name;
-    private int salary;
-
-    public Employee(String name, int salary) {
-        this.name = name;
-        this.salary = salary;
-    }
-
-    // This method is responsible for both managing data and printing it
-    public void printEmployeeDetails() {
-        System.out.println("Name: " + name + ", Salary: " + salary);
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Employee employee = new Employee("John Doe", 50000);
-        employee.printEmployeeDetails();
-    }
-}
